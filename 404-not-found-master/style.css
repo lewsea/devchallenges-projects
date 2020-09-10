@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --gray1: #333333;
+  --gray2: #4f4f4f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  color: var(--gray1);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: 'Inconsolata', monospace;
+  margin: 1rem 0;
+}
+
+.hero {
+  display: flex;
+  margin: 4rem 0;
+}
+
+.hero__img {
+  width: 70%;
+  margin-right: 4rem;
+}
+
+.hero__img img {
+  width: 100%;
+}
+
+.hero__text {
+  align-self: center;
+  margin-right: 4rem;
+}
+
+.hero__text h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.hero__text p {
+  margin: 2rem 0;
+  width: 40%;
+  color: var(--gray2);
+}
+
+.hero__text button {
+  background-color: var(--gray1);
+  color: white;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.name p {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero__text {
+    margin: 0;
+  }
+  .hero__text h1 {
+    font-size: 3rem;
+  }
+  .hero__text p {
+    width: 100%;
+  }
+  .name {
+    margin: 1rem 0;
+  }
+}
