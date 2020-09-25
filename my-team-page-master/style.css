@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  width: 50%;
+}
+
+header .about {
+  width: 50%;
+  line-height: 27px;
+}
+
+.about p:first-of-type {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.grid-container {
+  width: 70%;
+  margin: 4rem auto;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 5rem;
+}
+
+.grid-img {
+  position: relative;
+}
+
+.grid-img img {
+  width: 100%;
+}
+
+.center {
+  /* transform: translateY(100px); */
+  margin-top: 100px;
+}
+
+.grid-img .job-title {
+  position: absolute;
+  top: 80px;
+  right: -20px;
+  transform: rotate(90deg);
+  transform-origin: 80% 120%;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  header {
+    width: 90%;
+    flex-direction: column;
+  }
+  header h1 {
+    width: 100%;
+    font-size: 3rem;
+  }
+  header .about {
+    width: 90%;
+    margin: 1rem 0;
+  }
+  .center {
+    margin-top: 0;
+  }
+}
+
+.name p {
+  padding: 1rem;
+  text-align: center;
+  font-family: sans-serif;
+}
