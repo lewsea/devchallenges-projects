@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Interior Consultant</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>This Interior</h1>
+      </div>
+      <nav>
+        <ul id="nav">
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Collection</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <i class="fa fa-bars" id="hamburg"></i>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-text">
+        <h2>Modern interior</h2>
+        <p>A full-Service residential & commercial interior design and staging company offering professional organizing
+          & eco-services.</p>
+        <a href="">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+      <div class="main-img">
+        <img src="img/photo1.png" alt="">
+        <div class="img-aside">
+          <div class="people">
+            <img src="img/photo2.png" alt="">
+            <div class="people-info">
+              <h4>Aliza Webber</h4>
+              <p>Interior designer</p>
+            </div>
+          </div>
+          <div class="people-content">
+            <h3>Designed in 2020 by Aliza Webber</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="name">
+    <p>Luis Gudmalin @ DevChallenges.io</p>
+  </div>
+  <script type="text/javascript">
+
+    const hamburg = document.getElementById('hamburg');
+    const nav = document.getElementById('nav');
+
+    hamburg.addEventListener('click', function () {
+      if (hamburg.classList.contains('fa-bars')) {
+        hamburg.classList.remove('fa-bars');
+        hamburg.classList.add('fa-times');
+        nav.style.display = 'flex';
+      } else {
+        hamburg.classList.remove('fa-times');
+        hamburg.classList.add('fa-bars');
+        nav.style.display = 'none';
+      }
+    });
+
+  </script>
+</body>
+
+</html>
