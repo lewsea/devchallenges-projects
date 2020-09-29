@@ -56,6 +56,7 @@ header .about {
   margin-top: 100px;
 }
 
+/* this can be done using writing-mode property : vertical-rl; lol  */
 .grid-img .job-title {
   position: absolute;
   top: 80px;

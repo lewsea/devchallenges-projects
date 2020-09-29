@@ -8,13 +8,172 @@
   <link rel="icon" href="devchallenges.png" />
   <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Edie Homepage</title>
 </head>
 
 <body>
-  <div class="name">
-    <p>Luis Gudmalin @ DevChallenges.io</p>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <h1>Edie</h1>
+      </div>
+      <nav>
+        <ul id="nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Our Works</a></li>
+          <li><a href="">Clients</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <i class="fa fa-bars" id="hamburg"></i>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="hero__text">
+        <p>Unhappy with your website?</p>
+        <h2>We create beautiful and fast web services</h2>
+      </div>
+      <img src="img/heroImage.jpg" alt="" class="hero__img">
+      <div class="hero__text bottom">
+        <h2>Story, emotion and purpose</h2>
+        <p>We help transform your ideas into real world applications that will outperform your toughest competition and
+          help you achieve your strategic goals in short period of time.</p>
+        <div class="cta">
+          <p>Want us to contact you?</p>
+          <div class="inputs">
+            <input type="email" name="" id="" placeholder="Email">
+            <input type="submit" value="Join">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services-container">
+      <h2>We offer high demand services</h2>
+      <div class="services">
+        <div class="services__blocks">
+          <span class="material-icons blue"> edit </span>
+          <h3>UI/UX Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.</p>
+          <button>Get started</button>
+        </div>
+        <div class="services__blocks">
+          <span class="material-icons green"> code </span>
+          <h3>Front End</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis. </p>
+          <button>Get started</button>
+        </div>
+        <div class="services__blocks">
+          <span class="material-icons red"> list </span>
+          <h3>Back End</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis. </p>
+          <button>Get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="designs">
+      <h4>Good design means good business</h4>
+      <div class="designs__grid">
+        <div class="designs__grid-card down">
+          <img src="img/smarthome.jpg" alt="">
+          <p>Full stack application</p>
+          <h5>Smart home dashboard</h5>
+        </div>
+        <div class="designs__grid-card">
+          <img src="img/onboard.png" alt="">
+          <p>UX/UI design</p>
+          <h5>Onboard application</h5>
+        </div>
+        <div class="designs__grid-card down">
+          <img src="img/booking.png" alt="">
+          <p>Mobile application</p>
+          <h5>Booking system</h5>
+        </div>
+        <div class="designs__grid-card">
+          <img src="img/juice-product.png" alt="">
+          <p>Front End application</p>
+          <h5>Juice product homepage</h5>
+        </div>
+      </div>
+      <a href="">see more <span class="material-icons"> trending_flat </span></a>
+    </div>
+    <div class="teams">
+      <div class="teams__about">
+        <p>Meet the team</p>
+        <h3>We are chilled and a laidback team</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="teams__imgs">
+        <img src="img/person1.png" alt="" class="person1">
+        <img src="img/person2.png" alt="" class="person2">
+        <!-- /* nameOfThisGirlPlssLol */ -->
+        <img src="img/person3.png" alt="" class="person3">
+      </div>
+    </div>
+    <div class="testimonials">
+      <h2>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
+      </h2>
+      <div class="testimonials__person">
+        <img src="img/person4.png" alt="">
+        <div class="testimonials__person-info">
+          <h3>Carlos Tran</h3>
+          <p>The Decorate Gatsby</p>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="footer-container">
+    <footer>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Our Works</a></li>
+        <li><a href="">Clients</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="footer__social">
+        <h1>Edie</h1>
+        <div class="footer__social-icon">
+          <img src="img/instagram.svg" alt="">
+          <img src="img/linkedin.svg" alt="">
+          <img src="img/twitter.svg" alt="">
+        </div>
+      </div>
+      <div class="footer__cta">
+        <p>Want us to contact you?</p>
+        <div class="inputs">
+          <input type="email" name="" id="" placeholder="Email">
+          <input type="submit" value="Join">
+        </div>
+      </div>
+    </footer>
+    <div class="name">
+      <p>Luis Gudmalin @ DevChallenges.io</p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    const hamburg = document.getElementById('hamburg');
+    const nav = document.getElementById('nav');
+
+    hamburg.addEventListener('click', function () {
+      if (hamburg.classList.contains('fa-bars')) {
+        hamburg.classList.remove('fa-bars');
+        hamburg.classList.add('fa-times');
+        nav.style.display = 'flex';
+      } else {
+        hamburg.classList.remove('fa-times');
+        hamburg.classList.add('fa-bars');
+        nav.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 
 </html>
